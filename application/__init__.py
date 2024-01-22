@@ -41,9 +41,9 @@ class User(db.Model):
 with app.app_context():
     db.create_all()
 
-@app.route('/')
-def home():
-    return redirect({url_for('http://localhost:3000/')})
+# @app.route('/')
+# def home():
+#     return redirect({url_for('http://localhost:3000/')})
 
 @app.route('/signup',methods=['POST'])
 def signup():
