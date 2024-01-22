@@ -4,13 +4,14 @@ from flask_cors import CORS
 from datetime import datetime
 from flask_migrate import Migrate
 
+
 app = Flask(__name__)
 CORS(app)
 # external 
 # postgres://noteapp_2lrf_user:LUHqIe6yNBV8qbMiV3owvCffs0YiUW6E@dpg-cmmvm10l5elc73cen5kg-a.singapore-postgres.render.com/noteapp_2lrf
 # Internal 
 # postgres://noteapp_2lrf_user:LUHqIe6yNBV8qbMiV3owvCffs0YiUW6E@dpg-cmmvm10l5elc73cen5kg-a/noteapp_2lrf 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://noteapp_2lrf_user:LUHqIe6yNBV8qbMiV3owvCffs0YiUW6E@dpg-cmmvm10l5elc73cen5kg-a/noteapp_2lrf'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://noteapp_2lrf_user:LUHqIe6yNBV8qbMiV3owvCffs0YiUW6E@dpg-cmmvm10l5elc73cen5kg-a.singapore-postgres.render.com/noteapp_2lrf'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db = SQLAlchemy(app)
