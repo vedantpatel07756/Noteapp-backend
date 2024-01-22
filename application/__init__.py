@@ -11,7 +11,10 @@ CORS(app)
 # postgres://noteapp_2lrf_user:LUHqIe6yNBV8qbMiV3owvCffs0YiUW6E@dpg-cmmvm10l5elc73cen5kg-a.singapore-postgres.render.com/noteapp_2lrf
 # Internal 
 # postgres://noteapp_2lrf_user:LUHqIe6yNBV8qbMiV3owvCffs0YiUW6E@dpg-cmmvm10l5elc73cen5kg-a/noteapp_2lrf 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://noteapp_2lrf_user:LUHqIe6yNBV8qbMiV3owvCffs0YiUW6E@dpg-cmmvm10l5elc73cen5kg-a/noteapp_2lrf '
+# postgres://noteapp_2lrf_user:LUHqIe6yNBV8qbMiV3owvCffs0YiUW6E@dpg-cmmvm10l5elc73cen5kg-a/noteapp_2lrf
+# postgres://noteapp_2lrf_user:LUHqIe6yNBV8qbMiV3owvCffs0YiUW6E@dpg-cmmvm10l5elc73cen5kg-a/noteapp_2lrf
+
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://noteapp_2lrf_user:LUHqIe6yNBV8qbMiV3owvCffs0YiUW6E@dpg-cmmvm10l5elc73cen5kg-a/noteapp_2lrf'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db = SQLAlchemy(app)
